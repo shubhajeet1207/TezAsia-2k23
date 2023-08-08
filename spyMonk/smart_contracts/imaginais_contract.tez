@@ -1,0 +1,37 @@
+type token is record
+  owner : address;
+  metadata : map(string, string);
+end;
+
+type storage is map(nat, token);
+
+function empty_storage() : storage is
+  map [] : storage;
+
+function mint(n : nat; metadata : map(string, string)) : storage is
+  block { skip };
+  let token : token = { owner = Current.sender; metadata = metadata };
+  let storage' = map add n token Current.storage;
+  storage';
+
+function transfer(from : address; to : address; n : nat) : storage is
+  block { skip };
+  let token : token = Current.storage[n];
+  assert(token.owner == from, 0);
+  let token' : token = { owner = to; metadata = token.metadata };
+  let storage' = map update n token' Current.storage;
+  storage';
+
+# Add more functions as needed for your NFT implementation
+
+# Entry point function
+function main(param : operation; storage : storage) : operation * storage is
+  block { skip };
+  match param with
+  | Pair(n, metadata) ->
+    (nil, mint(n, metadata))
+  | Triple(from, Pair(to, n)) ->
+    (nil, transfer(from, to, n))
+  | _ ->
+    (nil, storage)
+  end;

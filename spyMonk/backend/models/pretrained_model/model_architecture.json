@@ -1,0 +1,40 @@
+{
+    "generator": {
+      "layers": [
+        {
+          "type": "linear",
+          "input_dim": 100,  
+          "output_dim": 256 
+        },
+        {
+          "type": "leaky_relu"
+        },
+        {
+          "type": "linear",
+          "input_dim": 256,
+          
+          "output_dim": 512
+        },
+        {
+          "type": "leaky_relu"
+        },
+        {
+          "type": "linear",
+          "input_dim": 512,
+          "output_dim": 1024
+        },
+        {
+          "type": "leaky_relu"
+        },
+        {
+          "type": "linear",
+          "input_dim": 1024,
+          "output_dim": "3*256*256"  
+        },
+        {
+          "type": "tanh"  
+        }
+      ]
+    }
+  }
+  

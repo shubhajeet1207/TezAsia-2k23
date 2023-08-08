@@ -1,0 +1,86 @@
+/* Additional styles for specific components or pages */
+
+/* Styles for the AI-generated NFT modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Button styles */
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-input {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    padding: 0.5rem;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .nft-container {
+        justify-content: center;
+    }
+
+    .nft-item {
+        width: 90%;
+    }
+}

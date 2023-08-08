@@ -1,0 +1,30 @@
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+# Assuming you have defined your Generator model and DataLoader for the dataset
+generator = Generator()
+
+# Define loss function and optimizer
+criterion = nn.MSELoss()  # Replace this with your desired loss function
+optimizer = optim.Adam(generator.parameters(), lr=0.001)  # Replace with your desired optimizer and learning rate
+
+# Training loop
+num_epochs = 100
+for epoch in range(num_epochs):
+    for inputs, labels in dataloader:  # Replace 'dataloader' with your actual data loader
+        # Forward pass
+        outputs = generator(inputs)
+
+        # Compute the loss
+        loss = criterion(outputs, labels)
+
+        # Backpropagation and optimization
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+    # Optionally print or log the loss after each epoch
+
+# Save the model's state dictionary (weights) to a file
+torch.save(generator.state_dict(), 'model_weights.pt')

@@ -1,0 +1,91 @@
+/* Global styles */
+
+/* Apply a CSS reset to remove default browser styling */
+/* You can use a library like Normalize.css for a more comprehensive reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Set default font and background color for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Main header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #555;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Main section styles */
+main {
+    padding: 1rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Styles for NFT display */
+.nft-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nft-item {
+    width: 30%; /* Adjust this width based on your layout */
+    margin-bottom: 1rem;
+}
+
+.nft-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.nft-title {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.nft-description {
+    font-size: 1rem;
+    color: #555;
+}
