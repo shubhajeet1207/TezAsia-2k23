@@ -12,17 +12,17 @@ The project aims to address the growing demand for unique digital art by providi
 
 | Component       | Technology           |
 |-----------------|----------------------|
-| Backend         | Python               |
+| Backend         | Python, Fast API, Django-REST Framework               |
 | Frontend        | JavaScript, HTML/CSS |
 | Blockchain      | Tezos                |
 | AI/ML Framework | TensorFlow, PyTorch  |
 
-## 🖼️ Project Demo
+<!-- ## 🖼️ Project Demo
 
 ![Demo Image 1](frontend/images/demo1.png)
 ![Demo Image 2](frontend/images/demo2.png)
 
-🎥 [Watch Demo Video](https://www.youtube.com/watch?v=your-demo-video-link)
+🎥 [Watch Demo Video](https://www.youtube.com/watch?v=your-demo-video-link) -->
 
 ## 📄 Smart Contract
 
@@ -38,9 +38,7 @@ Check out our project presentation [here](presentation/imaginaai_presentation.pp
 
 ## 👥 Team Members
 
-| Name         | Role              | GitHub                | LinkedIn                    |
-|--------------|-------------------|-----------------------|-----------------------------|
-| John Doe     | Project Lead      | [john-doe](https://github.com/john-doe) | [John Doe](https://www.linkedin.com/in/john-doe) |
-| Jane Smith   | AI/ML Specialist  | [jane-smith](https://github.com/jane-smith) | [Jane Smith](https://www.linkedin.com/in/jane-smith) |
-
-📬 Feel free to contact our team members for any questions or collaboration opportunities.
+| Name         | Role              | GitHub                |
+|--------------|-------------------|-----------------------|
+| Shubhajeet Pradhan     | AI/ML &  Back-End      | [shubhajeet1207](https://github.com/shubhajeet1207) |
+| Aikanshi Jain   | Blockchain & Front-End  | [aikanshijain](https://github.com/aikanshijain2001) |
